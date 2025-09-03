@@ -7,4 +7,16 @@
     <string name="login_screen_button_login">Log in</string>
     <string name="login_screen_text_forgot_password">Forgotten the Password?</string>
     <string name="login_screen_button_signup">Create new account</string>
+    <string name="register_screen_header_type_mobil">Wich is your mobile number?</string>
+    <string name="register_screen_header_type_email">Wich is your email?</string>
+    <string name="register_screen_body_type_movil">Enter your mobil contact number. Nobody will see it on your profile</string>
+    <string name="register_screen_body_type_email">Enter your contact email, Nobody will see it on your profile</string>
+    <string name="register_screen_textfield_type_movil">Mobil number</string>
+    <string name="register_screen_textfield_type_email">Email</string>
+    <string name="register_screen_bodysmall_type_movil">To recibe WhatsApp notifications and SMS for security and to log in</string>
+    <string name="register_screen_bodysmall_type_email">We wil send you email as well. You can cancel it anytime. More information</string>
+    <string name="register_screen_primarybutton">Next</string>
+    <string name="register_screen_secondarybutton_type_movil">Sing up with your email</string>
+    <string name="register_screen_secondarybutton_type_email">Sing up with your Mobil number</string>
+    <string name="register_screen_footer_label">Search my account</string>
 </resources>

@@ -7,4 +7,16 @@
     <string name="login_screen_button_login">Iniciar sesion</string>
     <string name="login_screen_text_forgot_password">Has olvidado la contrasenha?</string>
     <string name="login_screen_button_signup">Crear cuenta nueva</string>
+    <string name="register_screen_header_type_mobil">Cual es tu numero de telefono?</string>
+    <string name="register_screen_header_type_email">Cual es tu correo electronico?</string>
+    <string name="register_screen_body_type_movil">Introduce tu numero de movil de contacto. Nadie lo vera en tu perfil</string>
+    <string name="register_screen_body_type_email">Introduce tu correo electronico de contacto, nadie lo vera en tu perfil</string>
+    <string name="register_screen_textfield_type_movil">Numero de movil</string>
+    <string name="register_screen_textfield_type_email">Correo electronico</string>
+    <string name="register_screen_bodysmall_type_movil">Puede que recibas notificaciones nuestras en WhatsApp y por SMS por motivos de seguridad y para iniciar sesion</string>
+    <string name="register_screen_bodysmall_type_email">Tambien te enviaremos coreos electronicos. Puedes cancelar esta opcion cuando quieras. Mas informacion</string>
+    <string name="register_screen_primarybutton">Siguiente</string>
+    <string name="register_screen_secondarybutton_type_movil">Registrarte con tu correo electronico</string>
+    <string name="register_screen_secondarybutton_type_email">Registrate con tu numero de movil</string>
+    <string name="register_screen_footer_label">Buscar mi cuenta</string>
 </resources>
