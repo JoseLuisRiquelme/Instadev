@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">InstaDev</string>
+    <string name="login_screen_header_language_country">English(USA)</string>
+    <string name="login_screen_textfield_email">User, email o mobile number</string>
+    <string name="login_screen_textfield_password">Password</string>
+    <string name="login_screen_button_login">Log in</string>
+    <string name="login_screen_text_forgot_password">Forgotten the Password?</string>
+    <string name="login_screen_button_signup">Create new account</string>
+</resources>

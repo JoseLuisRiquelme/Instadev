@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">InstaDev</string>
+<!--    Login Screen-->
+    <string name="login_screen_header_language_country">Espanhol(Chile)</string>
+    <string name="login_screen_textfield_email">Usuario, correo electronico o movil</string>
+    <string name="login_screen_textfield_password">Contrasenha</string>
+    <string name="login_screen_button_login">Iniciar sesion</string>
+    <string name="login_screen_text_forgot_password">Has olvidado la contrasenha?</string>
+    <string name="login_screen_button_signup">Crear cuenta nueva</string>
+</resources>
