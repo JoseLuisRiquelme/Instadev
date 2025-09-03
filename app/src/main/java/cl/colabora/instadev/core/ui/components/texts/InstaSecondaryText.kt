@@ -14,6 +14,6 @@ fun InstaSecondaryText(
     color: Color = MaterialTheme.colorScheme.onSurfaceVariant,
     fontSize: TextUnit
 ) {
-    Text(text = text, color = color, fontSize = fontSize)
+    Text(text = text, color = color, fontSize = fontSize, style = MaterialTheme.typography.bodyLarge)
 
 }

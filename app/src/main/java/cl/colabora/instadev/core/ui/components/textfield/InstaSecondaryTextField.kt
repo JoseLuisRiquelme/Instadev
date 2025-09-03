@@ -1,6 +1,5 @@
 package cl.colabora.instadev.core.ui.components.textfield
 
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
@@ -12,13 +11,13 @@ import androidx.compose.ui.unit.dp
 fun InstaSecondaryTextField(
     modifier: Modifier = Modifier,
     value: String,
-    onValueChange: () -> Unit,
+    onValueChange: (String) -> Unit,
     label: String
 ) {
     OutlinedTextField(
         modifier = modifier,
         value = value,
-        onValueChange = { onValueChange },
+        onValueChange = { onValueChange(it) },
         shape = RoundedCornerShape(16.dp),
         label = { Text(label) }
     )
