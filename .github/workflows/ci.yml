@@ -4,10 +4,12 @@ on:
     branches:
       - ID-3-crear-rama-ci-cd-integrar-ci-cd
       - main
+      - ID-5-crear-pantalla-RegisterScreen-y-su-funcionalidad
   pull_request:
     branches:
       - ID-3-crear-rama-ci-cd-integrar-ci-cd
       - main
+      - ID-5-crear-pantalla-RegisterScreen-y-su-funcionalidad
 jobs:
   build:
     runs-on: ubuntu-latest
