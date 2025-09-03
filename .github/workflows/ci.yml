@@ -3,9 +3,11 @@ on:
   push:
     branches:
       - ID-3-crear-rama-ci-cd-integrar-ci-cd
+      - main
   pull_request:
     branches:
       - ID-3-crear-rama-ci-cd-integrar-ci-cd
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,7 +16,7 @@ jobs:
       - name: set up JDK 11
         uses: actions/setup-java@v3
         with:
-          java-version: "11"
+          java-version: "17"
           distribution: 'temurin'
           cache: gradle
       - name: Change  wrapper permissions
