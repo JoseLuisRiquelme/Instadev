@@ -3,9 +3,11 @@ on:
   push:
     branches:
       - ID-3-crear-rama-ci-cd-integrar-ci-cd
+      - main
   pull_request:
     branches:
       - ID-3-crear-rama-ci-cd-integrar-ci-cd
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
