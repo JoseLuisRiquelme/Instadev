@@ -9,11 +9,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.TextUnit
 
 @Composable
-fun InstaSecondaryText(
+fun InstaSecondaryText(modifier: Modifier= Modifier,
     text: String,
     color: Color = MaterialTheme.colorScheme.onSurfaceVariant,
-    fontSize: TextUnit
 ) {
-    Text(text = text, color = color, fontSize = fontSize, style = MaterialTheme.typography.bodyLarge)
+    Text(modifier = modifier, text = text, color = color, style = MaterialTheme.typography.bodyMedium)
 
 }

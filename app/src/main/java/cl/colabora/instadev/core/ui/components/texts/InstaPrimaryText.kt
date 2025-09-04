@@ -8,10 +8,9 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun InstaPrimaryText(modifier: Modifier = Modifier, text: String) {
-    Text(
+    Text(modifier = modifier,
         text = text,
-        color = MaterialTheme.colorScheme.onSurfaceVariant,
-        fontSize = 18.sp,
+        color = MaterialTheme.colorScheme.onBackground,
         style = MaterialTheme.typography.bodyLarge
     )
 }

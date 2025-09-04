@@ -29,12 +29,13 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import cl.colabora.instadev.core.ui.components.buttons.InstaPrimaryButton
 import cl.colabora.instadev.core.ui.components.buttons.InstaSecondaryButton
+import cl.colabora.instadev.core.ui.components.textfield.InstaSecondaryTextField
 import cl.colabora.instadev.core.ui.components.texts.InstaSecondaryText
 
 //@Preview(showBackground = true)
 @Composable
 fun LoginScreen(
-    loginViewModel: LoginViewModel = viewModel(),onNavigate:()-> Unit
+    loginViewModel: LoginViewModel = viewModel(), onNavigate: () -> Unit
 ) {
 
     val uiState by loginViewModel.uiState.collectAsStateWithLifecycle()
@@ -58,30 +59,20 @@ fun LoginScreen(
         }
         Spacer(Modifier.weight(0.5f))
         Image(
-            modifier = Modifier.size(50.dp),
-            painter = painterResource(R.drawable.insta_logo),
+            modifier = Modifier.size(72.dp),
+            painter = painterResource(R.drawable.instadev_icon),
             contentDescription = ""
         )
         Spacer(Modifier.weight(0.5f))
-        OutlinedTextField(
-            modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(16.dp),
-            label = {
-                Text(
-                    text = stringResource(R.string.login_screen_textfield_email),
-                    color = MaterialTheme.colorScheme.onBackground
-                )
-            },
+        InstaSecondaryTextField(
+            modifier = Modifier.fillMaxWidth(),
+            label = stringResource(R.string.login_screen_textfield_email),
             value = uiState.email,
             onValueChange = { loginViewModel.onEmailChanged(it) })
         Spacer(Modifier.height(8.dp))
-        OutlinedTextField(
-            label = {
-                Text(
-                    text = stringResource(R.string.login_screen_textfield_password),
-                    color = MaterialTheme.colorScheme.onBackground
-                )
-            },
-            modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(16.dp),
+        InstaSecondaryTextField(
+            modifier = Modifier.fillMaxWidth(),
+            label = stringResource(R.string.login_screen_textfield_password),
             value = uiState.password,
             onValueChange = { loginViewModel.onPasswordChanged(it) })
         Spacer(Modifier.height(8.dp))
@@ -91,15 +82,16 @@ fun LoginScreen(
             enabled = uiState.isLoginEnable,
             text = stringResource(R.string.login_screen_button_login)
         )
+        Spacer(Modifier.height(18.dp))
         InstaSecondaryText(
             text = stringResource(R.string.login_screen_text_forgot_password),
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-            fontSize = 14.sp
+            color = MaterialTheme.colorScheme.onSurfaceVariant/*,
+            fontSize=14.sp*/
         )
         Spacer(Modifier.weight(1f))
         InstaSecondaryButton(
             modifier = Modifier.fillMaxWidth(),
-            onClick = {onNavigate()}, text = stringResource(R.string.login_screen_button_signup)
+            onClick = { onNavigate() }, text = stringResource(R.string.login_screen_button_signup)
         )
         Icon(
             modifier = Modifier.height(30.dp),

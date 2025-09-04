@@ -1,11 +1,10 @@
 package cl.colabora.instadev.core.ui.components.textfield
 
-import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 
 @Composable
 fun InstaSecondaryTextField(
@@ -18,7 +17,8 @@ fun InstaSecondaryTextField(
         modifier = modifier,
         value = value,
         onValueChange = { onValueChange(it) },
-        shape = RoundedCornerShape(16.dp),
-        label = { Text(label) }
+        shape = MaterialTheme.shapes.medium,
+        textStyle = MaterialTheme.typography.titleSmall,
+        label = { Text(label, color = MaterialTheme.colorScheme.onSurfaceVariant) }
     )
 }

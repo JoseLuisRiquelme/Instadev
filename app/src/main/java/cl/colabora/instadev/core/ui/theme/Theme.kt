@@ -15,16 +15,16 @@ private val DarkColorScheme = darkColorScheme(
     primary = InstaBlue,
     onPrimary = Color.White,
     background = Gray20,
-    onBackground = Gray70,
-    onSurfaceVariant = Color.White,
+    onBackground = Color.White,
+    onSurfaceVariant =  Gray70
 )
 
 private val LightColorScheme = lightColorScheme(
     primary = InstaBlue,
     onPrimary = Color.White,
     background = Gray100,
-    onBackground = Gray80,
-    onSurfaceVariant = Gray30
+    onBackground = Gray30,
+    onSurfaceVariant = Gray80
 
 
 )

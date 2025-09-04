@@ -13,8 +13,7 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun InstaTitleText(
     modifier: Modifier = Modifier,
-    text: String = "Cual es tu numero de telefono?",
-    fontStyle: TextStyle? = MaterialTheme.typography.headlineMedium
+    text: String
 ) {
     Text(
         modifier = modifier,
