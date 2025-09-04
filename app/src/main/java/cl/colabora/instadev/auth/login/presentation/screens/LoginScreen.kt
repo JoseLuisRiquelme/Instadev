@@ -27,6 +27,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.hilt.navigation.compose.hiltViewModel
 import cl.colabora.instadev.core.ui.components.buttons.InstaPrimaryButton
 import cl.colabora.instadev.core.ui.components.buttons.InstaSecondaryButton
 import cl.colabora.instadev.core.ui.components.textfield.InstaSecondaryTextField
@@ -35,7 +36,8 @@ import cl.colabora.instadev.core.ui.components.texts.InstaSecondaryText
 //@Preview(showBackground = true)
 @Composable
 fun LoginScreen(
-    loginViewModel: LoginViewModel = viewModel(), onNavigate: () -> Unit
+    loginViewModel: LoginViewModel = hiltViewModel(),
+    onNavigate: () -> Unit
 ) {
 
     val uiState by loginViewModel.uiState.collectAsStateWithLifecycle()
@@ -78,7 +80,7 @@ fun LoginScreen(
         Spacer(Modifier.height(8.dp))
         InstaPrimaryButton(
             modifier = Modifier.fillMaxWidth(),
-            onClick = {},
+            onClick = { loginViewModel.onClickSelected() },
             enabled = uiState.isLoginEnable,
             text = stringResource(R.string.login_screen_button_login)
         )
